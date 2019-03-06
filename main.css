@@ -1,3 +1,16 @@
 img {
-  width: 20em;
+  width: 50em;
+  height: 25em;
+}
+
+p {
+  font-size: 2em;
+}
+
+.pictureDiv {
+  text-align: center;
+}
+
+.allImg {
+  margin-top: 5em;
 }
