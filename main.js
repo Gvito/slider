@@ -2,8 +2,12 @@
 var pictureIndex = 0;
 // actived function
 showCarousel();
+// button prev and next controls
+function plusPicture(n) {
+  showCarousel(pictureIndex += n);
+}
 // Carousel
-function showCarousel() {
+function showCarousel(n) {
   // variable of all img
   var picture = document.getElementsByClassName("pictureDiv");
   // hide all img
@@ -14,6 +18,9 @@ function showCarousel() {
   // if the pictureIndex > the picture 1 so +1 on pictureIndex
   if (pictureIndex > picture.length) {
     pictureIndex = 1;
+  }
+  if (n < 1) {
+    pictureIndex = picture.length;
   }
   // view picture of the boucle and delete the precedent pictureIndex view
   picture[pictureIndex-1].style.display = "block";
