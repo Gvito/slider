@@ -15,7 +15,7 @@ p {
   margin-top: 5em;
 }
 
-/* Next & previous buttons */
+/* next & pre buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -31,13 +31,8 @@ p {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+/* Position the next button on the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
 }
